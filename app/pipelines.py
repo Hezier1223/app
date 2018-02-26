@@ -21,9 +21,9 @@ class AppPipeline(object):
 
 class ToutiaoPipeline(object):
     def process_item(self, item, spider):
-        session = DBSession()
-        article = Toutiao(**item)
-        session.add(article)
-        session.commit()
-        session.close()
+        # session = DBSession()
+        # article = Toutiao(**item)
+        # session.add(article)
+        # session.commit()
+        # session.close()
         return item
