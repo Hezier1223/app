@@ -11,7 +11,6 @@ class ArticleSpider(scrapy.Spider):
     start_urls = ['https://www.toutiao.com/group/6525947280254566926/']
 
     def parse(self, response):
-        print(response)
         loader = ItemLoader(item=ArticleItem(), response=response)
         loader.add_css('title', '.article-title::text')
         # loader.add_css('media', '.article-box .article-sub span:nth-child(1)::text')

@@ -72,3 +72,7 @@ class ArticleItem(scrapy.Item):
         input_processor=MapCompose(date_convert)
     )
     content = scrapy.Field()
+
+
+class UCArticleItem(scrapy.Item):
+    title = scrapy.Field()

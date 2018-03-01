@@ -8,16 +8,18 @@ from app.items import MyItemLoader, LocationDetailItem, ArticleItem
 
 class ToutiaoSpider(scrapy.Spider):
     name = 'toutiao'
-    # allowed_domains = ['is.snssdk.com', 'toutiao.com']
+    allowed_domains = ['is.snssdk.com', 'toutiao.com']
     page_num = 10
     query = {
-        'keyword': '古天乐', 'device_id': 41296383123, 'cur_tab': 1, 'offset': 0, 'count': 10
+        'keyword': '古天乐', 'device_id': 12345678911, 'cur_tab': 1, 'offset': 0, 'count': 10
     }
 
     start_url = 'https://is.snssdk.com/2/wap/search_content/?device_id={device_id}&keyword={keyword}&count={' \
                 'count}&cur_tab={cur_tab}&format=json&offset={offset}'
 
     article_url = 'https://m.toutiao.com/i{id}/info/?i={id}'
+
+    # https://www.toutiao.com/api/comment/list/?group_id=6526514502849004046&item_id=6526514502849004046&offset=0&count=5
 
     def start_requests(self):
         for i in range(0, self.page_num):
@@ -40,7 +42,6 @@ class ToutiaoSpider(scrapy.Spider):
                     location_item['uuid'] = detail.get('id')
                     location_item['uuidType'] = detail.get('id')  # TODO
                     location_item['parentId'] = detail.get('id')  # TODO
-                    print(location_item)
                     # item_loader = MyItemLoader(item=ToutiaoItem())
                     # item_loader.add_value('media_name', [detail.get('media_name')])
                     # item_loader.add_value('abstract', [detail.get('abstract')])
@@ -49,10 +50,11 @@ class ToutiaoSpider(scrapy.Spider):
                     # item_loader.add_value('article_url', [detail.get('article_url')])
                     # item_loader.add_value('publish_time', [detail.get('publish_time')])
                     # item_loader.add_value('id', [detail.get('id')])
-                    # yield item_loader.load_item()
+                    yield location_item
                     if detail['id']:
-                        yield scrapy.Request(self.article_url.format(id=detail['id']), callback=self.parse_article,
-                                             meta={'article_type': detail['article_type']})
+                        yield scrapy.Request(self.article_url.format(id=detail['id']), callback=self.parse_article)
+                else:
+                    self.logger.error('Different Cell Type Found: ' + str(detail['cell_type']))
 
     # 解析文章详情
     def parse_article(self, response):

@@ -11,6 +11,8 @@ https://m.so.tv.sohu.com/search/sdk/keyword?key=古天乐&page=1&page_size=20&ty
 // 天天快报
 
 // UC头条
+https://m.sm.cn/s?app_name=ucnews-iflow&from=wh10339&q=古天乐
+https://m.sm.cn/s?app_name=ucnews-iflow&from=wh10339&q=古天乐&by=next&layout=html&page=2
 
 // 新华社
 
@@ -31,48 +33,3 @@ https://m.so.tv.sohu.com/search/sdk/keyword?key=古天乐&page=1&page_size=20&ty
 // 网易新闻
 
 
- 'article_type' (4412877808) = {int} 1
- 'create_time' (4412877936) = {int} 1519440506
- 'has_m3u8_video' (4412878000) = {int} 0
- 'keywords' (4412878064) = {str} '刑事侦缉档案,林峰,古天乐,圆月弯刀,港剧,溏心风暴,婚姻物语,TVB,使徒行者,谈情说案,宠物情缘,寻秦记,电影圈,烈火雄心,大唐双龙传'
- 'has_mp4_video' (4412878128) = {int} 0
- 'favorite_count' (4412878192) = {int} 10
- 'aggr_type' (4412878256) = {int} 0
- 'user_id' (4412706240) = {int} 61660169450
- 'bury_count' (4412878320) = {int} 0
- 'title' (4412706296) = {str} '我说他会是“平平无奇的古天乐接班人”，你们信吗？'
- 'show_play_effective_count' (4412809088) = {int} 0
- 'has_video' (4412876464) = {bool} False
- 'share_url' (4412878384) = {str} 'http://toutiao.com/group/6525947280254566926/?iid=0&app=news_article'
- 'id' (4412705008) = {int} 6525947280254566926
- 'source' (4412704560) = {str} '未视界'
- 'comment_count' (4412878448) = {int} 7
- 'article_url' (4412878512) = {str} 'http://m.ent.k618.cn/ttoriatc/jrtt/201802/t20180224_15352770.html'
- 'middle_mode' (4412878576) = {bool} False
- 'large_mode' (4412878640) = {bool} False
- 'item_source_url' (4412878704) = {str} '/group/6525947280254566926/'
- 'media_url' (4412878768) = {str} 'http://toutiao.com/m1569537525179393/'
- 'display_time' (4412936240) = {int} 1519439760
- 'publish_time' (4412936304) = {int} 1519439760
- 'go_detail_count' (4412936368) = {int} 4551
- 'image_list' (4412936432) = {list} <class 'list'>: [{'url': 'http://p1.pstatp.com/list/65b7000f359821a75c1e'}, {'url': 'http://p3.pstatp.com/list/65b1001b085026d78e67'}, {'url': 'http://p1.pstatp.com/list/65b1001b0851e385a5f6'}]
- 'item_seo_url' (4412936496) = {str} '/group/6525947280254566926/'
- 'tag_id' (4412706408) = {int} 6525947280254566926
- 'source_url' (4412876592) = {str} 'sslocal://detail?article_type=1&group_flags=1&item_id=6525947280254566926&aggr_type=1&gd_ext_json=%7B%22search_result_id%22%3A+6525947280254566926%2C+%22source%22%3A+%22search_tab%22%2C+%22query%22%3A+%22%5Cu53e4%5Cu5929%5Cu4e50%22%2C+%22log_pb%22%3A+%7B%
- 'item_id' (4412706464) = {str} '6525947280254566926'
- 'article_sub_type' (4412687392) = {int} 1
- 'natant_level' (4412936560) = {int} 0
- 'user_auth_info' (4412876848) = {dict} {'auth_type': '0', 'auth_info': '未来网图片官方帐号'}
- 'seo_url' (4412706520) = {str} '/group/6525947280254566926/'
- 'display_url' (4412936624) = {str} 'http://toutiao.com/group/6525947280254566926/'
- 'url' (4412706352) = {str} 'http://m.ent.k618.cn/ttoriatc/jrtt/201802/t20180224_15352770.html'
- 'level' (4412706576) = {int} 0
- 'digg_count' (4412936688) = {int} 0
- 'behot_time' (4412936752) = {int} 1519439760
- 'tag' (4412706632) = {str} 'news_entertainment'
- 'has_gallery' (4412936816) = {bool} False
- 'has_image' (4412936880) = {bool} True
- 'highlight' (4412877360) = {dict} {'source': [], 'abstract': [[40, 3]], 'title': [[11, 3]]}
- 'group_id' (4412936944) = {str} '6525947280254566926'
- 'middle_image' (4412937008) = {dict} {'url': 'http://p1.pstatp.com/list/65b7000f359821a75c1e', 'width': 261, 'url_list': [{'url': 'http://p1.pstatp.com/list/65b7000f359821a75c1e'}, {'url': 'http://pb3.pstatp.com/list/65b7000f359821a75c1e'}, {'url': 'http://pb9.pstatp.com/list/65b7000f359821a7
- __len__ = {int} 52
